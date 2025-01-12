@@ -4,7 +4,7 @@
 //    (See accompanying file ../LICENSE_1_0.txt or copy at
 //          http://www.boost.org/LICENSE_1_0.txt)
 
-#include <catch.hpp>
+#include <catch2/catch_all.hpp>
 #include <function_ref.hpp>
 
 static_assert(sizeof(p2548::function_ref<int()>) == sizeof(void *) * 2);

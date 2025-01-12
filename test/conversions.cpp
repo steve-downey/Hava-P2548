@@ -4,7 +4,7 @@
 //    (See accompanying file ../LICENSE_1_0.txt or copy at
 //          http://www.boost.org/LICENSE_1_0.txt)
 
-#include <catch.hpp>
+#include <catch2/catch_all.hpp>
 #include <functional>
 #include <function_ref.hpp>
 #include <copyable_function.hpp>

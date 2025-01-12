@@ -123,7 +123,7 @@ namespace p2548 {
 	//! @brief non-owning reference to a function (either a plain function or a functor)
 	//! @tparam Signature function signature of the referenced functor (including potential const and noexcept qualifiers)
 	template<typename... Signature>
-	struct function_ref;
+	class function_ref;
 
 	template<typename Signature>
 	class function_ref<Signature> final : internal_function_ref::function_call<function_ref<Signature>, Signature> {

@@ -4,7 +4,7 @@
 //    (See accompanying file ../LICENSE_1_0.txt or copy at
 //          http://www.boost.org/LICENSE_1_0.txt)
 
-#include <catch.hpp>
+#include <catch2/catch_all.hpp>
 #include <copyable_function.hpp>
 
 namespace {
@@ -81,7 +81,7 @@ namespace {
 
 		Function<int(int) noexcept> func0{std::in_place_type<functor>, 10};
 		REQUIRE(func0(1) == 11);
-	
+
 		Function<int(int) noexcept> func1{std::in_place_type<functor>, {11, 12}};
 		REQUIRE(func1(1) == 24);
 
@@ -896,7 +896,7 @@ namespace {
 		}
 
 		void operator()(int) const && noexcept {}
-	
+
 		template<template<typename...> typename Function>
 		static
 		void validate() {
